@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenAI GPT Prompt Builder</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.word-item').click(function() {
+                $('.word-item').removeClass('selected');
+                $(this).addClass('selected');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>OpenAI GPT Prompt Builder</h1>
+    <form method="post" action="/">
+        <label for="text">Enter some text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+        {% for item in config %}
+        <div>
+            <input type="checkbox" name="items" value="{{ item }}" id="{{ item }}">
+            <label for="{{ item }}">{{ item }}</label>
+        </div>
+        {% endfor %}
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

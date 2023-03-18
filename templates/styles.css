@@ -1,0 +1,78 @@
+/* Set default styles for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Style links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+/* Style paragraphs */
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* Style lists */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Style images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style buttons */
+button, input[type="submit"] {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.25em;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #0062cc;
+}
