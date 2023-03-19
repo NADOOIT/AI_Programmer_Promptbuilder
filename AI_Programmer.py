@@ -8,6 +8,8 @@ app.template_engine = "mako"
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+from dotenv import load_dotenv
+
 
 def create_prompt_form_config(config):
     prompt = ""
@@ -64,4 +66,10 @@ def index():
 
 
 if __name__ == "__main__":
+
+    load_dotenv()
+    openai.organization = os.getenv("OPENAI_ORG_ID")
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.Model.list()
+
     app.run(debug=True)
